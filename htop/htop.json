@@ -3,6 +3,7 @@
     "version":  "1.0.2",
     "release":  "1",
     "arch":     "x86_64",
+    "dist":     "el6",
     "spec":     "htop.spec",
     "source":   "http://downloads.sourceforge.net/project/htop/htop/1.0.2/htop-1.0.2.tar.gz",
     "checksum": "0d01cca8df3349c74569cefebbd9919e"
