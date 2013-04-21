@@ -27,9 +27,11 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make install DESTDIR=$RPM_BUILD_ROOT
 
-#remove empty direcories
+#remove empty/unwanted direcories
 rm -rf $RPM_BUILD_ROOT%{libdir}
 rm -rf $RPM_BUILD_ROOT%{includedir}
+rm -rf $RPM_BUILD_ROOT%{_usr}/share/applications
+rm -rf $RPM_BUILD_ROOT%{_usr}/share/pixmaps
 
 %files
 %defattr(-,root,root,-)
